@@ -1,6 +1,6 @@
 <p>
   <ion-list>
-  <ion-item-sliding *ngFor="let listaItem of listaService.listas" | filtroLista : tipo>
+  <ion-item-sliding *ngFor="let listaItem of listaService.listas| filtroLista : tipo">
    <ion-item (click) ="listaSeleccionada(listaItem)">>
   <ion-label>{{ listaItem.titulo }}</ion-label>
   

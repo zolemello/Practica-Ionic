@@ -1,7 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Lista } from 'src/app/models/lista.model';
 import { ListaService } from 'src/app/services/lista.service';
-//import { AlertController, ToastController } from '@ionic/angular';
+import { AlertController, ToastController } from '@ionic/angular';
 import { Router } from '@angular/router';
 
 @Component({
@@ -15,8 +15,8 @@ export class ListasComponent /* implements OnInit */{
   constructor(
     public listaService: ListaService,
      //ESTO VIENE DE TAB1.PAGE.TS
-    // public alertController:AlertController,
-     //public toastController:ToastController
+     public alertController:AlertController,
+    public toastController:ToastController,
      private router: Router
  
   ) { }
